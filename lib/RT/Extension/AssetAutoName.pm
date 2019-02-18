@@ -116,10 +116,10 @@ use strict;
 
         for my $field (@fields) {
             if ($field =~ /^(?:CF|CustomField).(.*)$/) {
-                my $cf = $self->FirstCustomFieldValue($1);
+                my $cf = $self->FirstCustomFieldValue($1) || 'CF not set';
                 $template =~ s/__${field}__/$cf/;
             } elsif ($self->_Accessible($field => 'read')) {
-                my $value = $self->$field;
+                my $value = $self->$field || 'field not set';
                 $template =~ s/__${field}__/$value/;
             }
         }
