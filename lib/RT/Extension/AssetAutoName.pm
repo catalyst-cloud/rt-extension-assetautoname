@@ -106,7 +106,7 @@ use strict;
 
     # Take a template, find all the fields that we'll substitute then if
     # they're a CustomField, find the first value for it, and substitute.
-    # Otherwise if it is a readable field (that this use has access to),
+    # Otherwise if it is a readable field (that this user has access to),
     # read it and substitute.
     sub _expand_name_template {
         my $self     = shift;
