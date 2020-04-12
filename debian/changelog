@@ -1,3 +1,9 @@
+rt-extension-assetautoname (0.02-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Andrew Ruthven <puck@catalystcloud.nz>  Sun, 12 Apr 2020 11:07:31 +0000
+
 rt-extension-assetautoname (0.01-1) unstable; urgency=low
 
   * Initial Release (Closes #xxx)
