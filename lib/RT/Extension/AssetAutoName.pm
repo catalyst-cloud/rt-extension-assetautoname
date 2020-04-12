@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package RT::Extension::AssetAutoName;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 NAME
 
@@ -57,6 +57,15 @@ If the CustomField is a multi-value, then only the first value is used.
 
 =back
 
+=head1 USAGE
+
+If the asset name is not set, the empty string or just an x, we'll dynamically
+generate a name based on a template.
+
+It is useful to allow 'x' in the case that data is being bulk updated, it has
+been reported that with some tools setting a short string is easier than
+deleting the text.
+
 =head1 AUTHOR
 
 Andrew Ruthven, Catalyst Cloud Ltd E<lt>puck@catalystcloud.nz<gt>
@@ -74,7 +83,7 @@ href="http://rt.cpan.org/Public/Dist/Display.html?Name=RT-Extension-AssetAutoNam
 
 =head1 LICENSE AND COPYRIGHT
 
-This software is Copyright (c) 2018 by Catalyst Cloud Ltd
+This software is Copyright (c) 2018-2020 by Catalyst Cloud Ltd
 
 This is free software, licensed under:
 
@@ -93,7 +102,7 @@ use strict;
         my $self = shift;
         my $name = $self->_Value('Name', @_);
 
-        if (! defined $name || $name eq '') {
+        if (! defined $name || $name eq '' || $name eq 'x') {
             my $template = RT->Config->Get('AssetAutoName')->{$self->CatalogObj->id} 
                 || RT->Config->Get('AssetAutoName')->{'_default'};
 
@@ -104,8 +113,9 @@ use strict;
         return $name;
     };
 
-    # Take a template, find all the fields that we'll substitute then if
-    # they're a CustomField, find the first value for it, and substitute.
+    # Take a template, find all the fields that we'll substitute.
+    # Then if they're a CustomField, find the first value in the CustomField,
+    # and substitute.
     # Otherwise if it is a readable field (that this user has access to),
     # read it and substitute.
     sub _expand_name_template {
