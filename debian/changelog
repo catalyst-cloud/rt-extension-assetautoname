@@ -12,6 +12,6 @@ rt-extension-assetautoname (0.02-1) unstable; urgency=medium
 
 rt-extension-assetautoname (0.01-1) unstable; urgency=low
 
-  * Initial Release (Closes #xxx)
+  * Initial Release (Closes #960896)
 
  -- Andrew Ruthven <puck@catalystcloud.nz>  Mon, 01 Oct 2018 07:21:56 +0000
