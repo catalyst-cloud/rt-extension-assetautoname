@@ -95,7 +95,8 @@ package RT::Extension::AssetAutoName;
 use strict;
 
 {
-    package RT::Asset;
+    package # hide from PAUSE
+        RT::Asset;
     no warnings 'redefine';
 
     *Name = sub {
