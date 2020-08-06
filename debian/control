@@ -5,8 +5,8 @@ Maintainer: Andrew Ruthven <andrew@etc.gen.nz>
 Build-Depends: debhelper (>= 9.20120312)
 Build-Depends-Indep: perl
 Standards-Version: 3.9.8
-Vcs-Git: https://salsa.debian.org/request-tracker-team/rt-extension-rest2.git
-Vcs-Browser: https://salsa.debian.org/request-tracker-team/rt-extension-rest2
+Vcs-Git: https://salsa.debian.org/request-tracker-team/rt-extension-assetautoname.git
+Vcs-Browser: https://salsa.debian.org/request-tracker-team/rt-extension-assetautoname
 Homepage: https://metacpan.org/release/RT-Extension-AssetAutoName
 
 Package: rt4-extension-assetautoname
