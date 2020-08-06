@@ -2,4 +2,6 @@ debhelper-build-stamp
 files
 *.debhelper.log
 *.substvars
+.debhelper
 rt4-extension-assetautoname/
+rt5-extension-assetautoname/

@@ -9,10 +9,10 @@ Vcs-Git: https://salsa.debian.org/request-tracker-team/rt-extension-assetautonam
 Vcs-Browser: https://salsa.debian.org/request-tracker-team/rt-extension-assetautoname
 Homepage: https://metacpan.org/release/RT-Extension-AssetAutoName
 
-Package: rt4-extension-assetautoname
+Package: rt5-extension-assetautoname
 Architecture: all
 Depends: ${misc:Depends}, ${perl:Depends},
- request-tracker4,
+ request-tracker5,
  perl,
 Description: AssetAutoName extension (Request Tracker)
  This extension adds automatic asset name generation from other fields

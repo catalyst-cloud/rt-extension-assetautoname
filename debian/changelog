@@ -1,17 +1,5 @@
-rt-extension-assetautoname (0.02-2) unstable; urgency=medium
-
-  * Bump compat level to v10.
-
- -- Andrew Ruthven <puck@catalyst.net.nz>  Wed, 13 May 2020 18:27:14 +0000
-
-rt-extension-assetautoname (0.02-1) unstable; urgency=medium
-
-  * New upstream release
-
- -- Andrew Ruthven <puck@catalystcloud.nz>  Sun, 12 Apr 2020 11:07:31 +0000
-
-rt-extension-assetautoname (0.01-1) unstable; urgency=low
+rt-extension-assetautoname (0.04-1) UNRELEASED; urgency=medium
 
   * Initial Release (Closes #960896)
 
- -- Andrew Ruthven <puck@catalystcloud.nz>  Mon, 01 Oct 2018 07:21:56 +0000
+ -- Andrew Ruthven <andrew@etc.gen.nz>  Thu, 06 Aug 2020 23:05:29 +1200
