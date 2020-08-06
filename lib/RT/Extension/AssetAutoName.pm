@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package RT::Extension::AssetAutoName;
 
-our $VERSION = '0.02';
+our $VERSION = '0.04';
 
 =head1 NAME
 
