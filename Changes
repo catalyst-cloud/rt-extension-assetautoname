@@ -1,5 +1,9 @@
 Revision history for RT-Extension-AssetAutoName
 
+0.05 2020-08-06
+ - Brown paper bag release.
+ - Update support RT versions in the docs.
+
 0.04 2020-08-06
  - Works on RT 5.0.0, remove upper limit on version.
 
